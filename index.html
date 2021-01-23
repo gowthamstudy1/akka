@@ -1,0 +1,300 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Great+Vibes&family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Quicksand:wght@700&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("img2.jpg") center center no-repeat;
+        background-size: cover;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+      }
+      .header {
+        color: #fff;
+        font-size: 5em;
+        letter-spacing: 6px;
+        font-family: "Arizonia", cursive;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-weight: lighter;
+        text-align: center;
+        border-bottom: 3px solid #ff1a75;
+        margin-bottom: 0;
+      }
+      .invitation {
+        font-family: "Noto Sans", sans-serif;
+        text-align: center;
+        font-size: 14px;
+        color: #e6e6e6;
+        letter-spacing: 4px;
+        line-height: 2em;
+        position: relative;
+        font-weight: lighter;
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
+      .invitation::before {
+        content: " ";
+        position: absolute;
+        background: #fff;
+        width: 10%;
+        height: 1px;
+        top: 50%;
+        left: 0;
+      }
+      .invitation::after {
+        content: " ";
+        position: absolute;
+        background: #fff;
+        width: 10%;
+        height: 1px;
+        top: 50%;
+        right: 0;
+      }
+      .names {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-left: auto;
+        margin-right: auto;
+        color: #e6b800;
+        font-family: "Great Vibes", cursive;
+        font-size: 85px;
+        letter-spacing: 0px;
+        height: 40%;
+        flex-grow: 3;
+      }
+      .name {
+        display: block;
+      }
+      .bride {
+        margin-left: 1%;
+        text-align: right;
+        width: 40%;
+      }
+      .groom {
+        width: 50%;
+        /* text-align: right; */
+      }
+      .venue {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(0, 20, 40);
+        padding: 20px 0;
+        font-family: "El Messiri", sans-serif;
+      }
+      .address {
+        font-size: 18px;
+        line-height: 40px;
+        position: relative;
+      }
+      .loc_icon {
+        position: absolute;
+        left: -50px;
+        font-size: 50px;
+      }
+      .venueHeader {
+        color: #fff;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .venue p {
+        color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+      }
+      .event_date {
+        text-align: center;
+        color: #fff;
+        font-family: "Great Vibes", cursive;
+        font-size: 50px;
+      }
+      .on {
+        text-align: center;
+        color: #fff;
+        font-family: "Great Vibes", cursive;
+        font-size: 100px;
+        margin-top: 60px;
+        line-height: 1;
+      }
+      .counter {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("img1.jpg") center center no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 100px;
+      }
+      .counter_head {
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .countdownContainer {
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .info {
+        text-align: center;
+        font-size: 50px;
+        font-family: "Quicksand", sans-serif;
+      }
+      /* media */
+
+      @media only screen and (max-width: 1100px) {
+        .names {
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 60px;
+          height: 40%;
+          align-items: center;
+          margin-top: 50px;
+        }
+        .bride,
+        .groom {
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          width: 100%;
+        }
+        .on {
+          font-size: 70px;
+          margin: 0;
+        }
+        .event_date {
+          font-size: 50px;
+        }
+        .countdownContainer {
+          padding: 20px 30px;
+        }
+        .info {
+          font-size: 30px;
+        }
+        .counter {
+          padding: 60px 20px;
+        }
+        iframe {
+          width: 400px;
+        }
+      }
+      @media only screen and (max-width: 770px) {
+        .header {
+          font-size: 60px;
+        }
+        .invitation {
+          letter-spacing: 2px;
+          max-width: 100%;
+        }
+        .info {
+          font-size: 20px;
+        }
+        .names {
+          font-size: 50px;
+        }
+        .event_date {
+          font-size: 40px;
+          margin-bottom: 50px;
+        }
+        .venue {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media all and (max-width: 480px) {
+        .invitation::after {
+          width: 0%;
+        }
+        .invitation::before {
+          width: 0%;
+        }
+        iframe {
+          width: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h3 class="header">Our Wedding!</h3>
+      <p class="invitation">Inviting you to the best day in our lives</p>
+      <div class="names">
+        <span class="bride name">J.Faleela</span>
+        <span class="">&</span>
+        <span class="groom name">S.Thamim Ansari</span>
+      </div>
+      <div class="timing">
+        <div class="on">on</div>
+        <div class="event_date">31st JAN 2021</div>
+      </div>
+    </div>
+    <div class="counter">
+      <h3 colspan="4" class="info counter_head">THE WEDDING DAY</h3>
+      <div class="countdownContainer">
+        <div class="info">
+          <div id="days"></div>
+          <div>Days</div>
+        </div>
+        <div class="info">
+          <div id="hours"></div>
+          <div>Hours</div>
+        </div>
+        <div class="info">
+          <div id="minutes"></div>
+          <div>Minutes</div>
+        </div>
+        <div class="info">
+          <div id="seconds"></div>
+          <div>Seconds</div>
+        </div>
+      </div>
+    </div>
+    <div class="venue">
+      <div class="address">
+        <h3 class="venueHeader">Venue</h3>
+        <p>
+          JAMAL PALACE, &nbsp;&nbsp;ANIYAPPAN ST,<br />
+          PERIYARNAGR, <br />NANGELKENI, &nbsp;PALLAVARAM,<br />
+          CHENNAI - 6000048. (NEAR NOOR MASJID)
+        </p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.080577787555!2d80.13839925055433!3d12.96669559081422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fc62d7cf30b%3A0x20751698b555c52c!2sJamal%20Palace%20Pammal!5e0!3m2!1sen!2sin!4v1611429933524!5m2!1sen!2sin"
+        width="600"
+        height="300"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
